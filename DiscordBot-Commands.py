@@ -29,7 +29,7 @@ async def leaklookup(self, query):
 # CFX Resolver.      
 @bot.command()
 async def CFX(self, ip):
-    ipopen = requests.get("https://api.lea.kz/cfx.php?cfxres=" + ip + "&key=FBI-BENNETTCHANGED")
+    ipopen = requests.get("https://api.lea.kz/cfx.php?cfxres=" + ip + "&key=keyhere")
     openinfo = ipopen.json()
 
     backend = openinfo["Backend"]
