@@ -2,7 +2,7 @@
 
 $cfxres = mysqli_real_escape_string($con, $_GET['cfxres']);
 
-if(!$apikey || !$cfxres) {die('cfx.re/join/4ar4k5, ex: cfx.php?cfxres=4ar4k5 ');}
+if(!$cfxres) {die('cfx.re/join/4ar4k5, ex: cfx.php?cfxres=4ar4k5 ');}
 	
 $url = "https://servers-frontend.fivem.net/api/servers/single/$cfxres";
 $json = file_get_contents($url);
